@@ -12,12 +12,7 @@ export const HeroSection = () => {
         </svg>
         <img
           className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          // src="../src/assets/HomePageHeroImg2.jpg"
-          // src="https://img3.junaroad.com/uiproducts/20393332/zoom_0-1696954891.jpg"
-          // src="https://backend.orbitvu.com/sites/default/files/image/still-life.jpeg"
-          // src="https://i.pinimg.com/736x/29/74/f9/2974f98a92a72b9afffa4e1275beef96.jpg"
           src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/69f7ae38715339.576bfc0e2df80.jpg"
-          // src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
           alt=""
         />
       </div>
@@ -29,14 +24,6 @@ export const HeroSection = () => {
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
             Everything you can imagine is real
           </h2>
-          {/* <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            Everything you
-            <br className="hidden md:block" />
-            can imagine{" "}
-            <span className="inline-block text-deep-purple-accent-400">
-              is real
-            </span>
-          </h2> */}
           <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

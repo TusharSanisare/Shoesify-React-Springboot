@@ -6,7 +6,7 @@ const ProductCategoryGallery = () => {
       <section className="bg-white my-8">
         <div className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6">
           <h2 className="mb-8 mr-10 text-4xl font-bold leading-none md:text-5xl">
-            Continually Scale Results
+            Top Selling Categorie's
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
@@ -15,13 +15,13 @@ const ProductCategoryGallery = () => {
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23484790/2023/5/31/14fc49d0-6ce3-4410-9e8c-147f57c539d91685518426707HRXbyHrithikRoshanMenWhiteMeshRunningNon-MarkingShoes1.jpg"
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Wines
+                  Sneaker's
                 </h3>
               </a>
             </div>
@@ -31,13 +31,13 @@ const ProductCategoryGallery = () => {
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 mb-4"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://i.pinimg.com/originals/29/74/f9/2974f98a92a72b9afffa4e1275beef96.jpg"
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Gin
+                  Sport's
                 </h3>
               </a>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
@@ -46,13 +46,13 @@ const ProductCategoryGallery = () => {
                   className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://www.hypephotography.co.uk/img-get2/I00008MdPoVtQ45A/fit=1000x750/Nike-Red.jpg"
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
                   <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                    Whiskey
+                    Gym
                   </h3>
                 </a>
                 <a
@@ -60,13 +60,13 @@ const ProductCategoryGallery = () => {
                   className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDUxA-EA3NO1K_ttTbT8DU42GLHeOz8TxzfgCUjk9VIUSu_5jm_aPMl-ThU9OE-CUWoHo&usqp=CAU"
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
                   <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                    Vodka
+                    Boot's
                   </h3>
                 </a>
               </div>
@@ -77,13 +77,13 @@ const ProductCategoryGallery = () => {
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://cdn.staticans.com/live/image/catalog/brandstore/ruosh/CatBanner/FormalCat.jpg"
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Brandy
+                  Men's Formal
                 </h3>
               </a>
             </div>
