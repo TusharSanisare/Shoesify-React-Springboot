@@ -35,10 +35,10 @@ const Navbar = () => {
 
           {/* SignUp Login Buttons */}
           {/* <div className="ml-auto md:w-48 hidden sm:flex flex-row gap-2 place-items-end">
-            <button class="bg-transparent text-gray-800 hover:text-black font-semibold py-2 px-4 border hover:border-black border-gray-800 rounded">
+            <button className="bg-transparent text-gray-800 hover:text-black font-semibold py-2 px-4 border hover:border-black border-gray-800 rounded">
               SignUp
             </button>
-            <button class="bg-transparent text-gray-800 hover:text-black font-semibold py-2 px-4 border hover:border-black border-gray-800 rounded">
+            <button className="bg-transparent text-gray-800 hover:text-black font-semibold py-2 px-4 border hover:border-black border-gray-800 rounded">
               Login
             </button>
           </div> */}

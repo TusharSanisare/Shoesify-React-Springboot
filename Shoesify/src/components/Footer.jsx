@@ -40,16 +40,16 @@ const Footer = () => {
               </a>
               <div className="flex flex-row space-x-8 items-center justify-between">
                 <a className="text-2xl">
-                  <i class="ri-facebook-box-fill"></i>
+                  <i className="ri-facebook-box-fill"></i>
                 </a>
                 <a className="text-2xl">
-                  <i class="ri-instagram-fill"></i>
+                  <i className="ri-instagram-fill"></i>
                 </a>
                 <a className="text-2xl">
-                  <i class="ri-twitter-fill"></i>
+                  <i className="ri-twitter-fill"></i>
                 </a>
                 <a className="text-2xl">
-                  <i class="ri-discord-fill"></i>
+                  <i className="ri-discord-fill"></i>
                 </a>
               </div>
             </div>
