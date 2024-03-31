@@ -1,12 +1,12 @@
 import React from "react";
 
-const TopProducts = () => {
+const NewArrivedProductsGallery = () => {
   return (
     <>
       <div className="bg-white mx-auto max-w-6xl py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-2xl px-3 md:px-6">
           <h2 className="mb-8 mr-10 text-4xl font-bold leading-none md:text-5xl">
-            Top Sellers
+            New Arrived Shoes
           </h2>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:gap-3 xl:gap-4">
             {/* image - start */}
@@ -41,7 +41,6 @@ const TopProducts = () => {
                 Wines
               </h3>
             </a>
-            {/* image - end */}
             {/* image - start */}
             <a
               href="#"
@@ -58,7 +57,6 @@ const TopProducts = () => {
                 Wines
               </h3>
             </a>
-            {/* image - end */}
             {/* image - start */}
             <a
               href="#"
@@ -75,7 +73,6 @@ const TopProducts = () => {
                 Wines
               </h3>
             </a>
-            {/* image - end */}
           </div>
         </div>
       </div>
@@ -83,4 +80,4 @@ const TopProducts = () => {
   );
 };
 
-export default TopProducts;
+export default NewArrivedProductsGallery;
