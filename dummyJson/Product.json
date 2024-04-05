@@ -1,0 +1,35 @@
+[
+  {
+    "Product_id": "SH001",
+    "Name": "Men's Running Shoes",
+    "Description": "High-performance running shoes designed for comfort and durability.",
+    "Price": 79.99,
+    "Gender": "Men's",
+    "Color": "Black/White",
+    "Size": "9",
+    "Material": "Mesh, Synthetic",
+    "Sole Material": "Rubber",
+    "Insole Material": "Foam",
+    "Heel Height": "1 inch",
+    "Weight": "300 grams",
+    "Image URLs": ["https://example.com/shoe1.jpg", "https://example.com/shoe1_back.jpg"],
+    "Stock": "In stock",
+    "Reviews": [
+      {
+        "User": "JohnDoe",
+        "Rated": 4.5,
+        "Comment": "Great shoes! Very comfortable for long runs."
+      },
+      {
+        "User": "JaneSmith",
+        "Rated": 5.0,
+        "Comment": "Excellent quality and stylish design."
+      }
+    ],
+    "Rating": 4.75,
+    "TotalSold": 1500,
+    "TotalPices": 2000,
+    "ReleaseDate": "2023-05-15",
+    "Tags": ["running", "men's", "athletic"]
+  }
+]
