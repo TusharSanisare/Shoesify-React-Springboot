@@ -40,6 +40,14 @@ public class ProductController {
     int status = productService.saveProductList(products);
     return status;
   }
+  // @PostMapping("/test")
+  // public List<Product> addProducts(@RequestBody List<Product> products) {
+  // return products;
+  // }
+  // @PostMapping("/products")
+  // public String fuck(@RequestBody List<Product> products) {
+  // return "fuck uuuuuuuuuuu......";
+  // }
 
   @GetMapping("/products")
   public List<Product> getProducts() {

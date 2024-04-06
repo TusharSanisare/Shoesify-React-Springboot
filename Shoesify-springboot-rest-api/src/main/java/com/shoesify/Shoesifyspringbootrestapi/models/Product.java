@@ -14,28 +14,24 @@ public class Product {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private int id;
+  private int productId;
 
-  private String productId;
   private String category;
   private int category_id;
   private String name;
   private String description;
-  private double price;
+  private int price;
+  private int offer;
   private String gender;
-  private String color;
-  private String size;
+  private List<String> color;
+  private List<String> imageUrls;
+  private List<String> tags;
+  private List<Integer> size;
   private String material;
   private String soleMaterial;
   private String insoleMaterial;
-  private String heelHeight;
   private String weight;
-  private List<String> imageUrls;
-  private String stock;
-  private double rating;
-  private int totalSold;
-  private int totalPieces;
-  private String releaseDate;
-  private List<String> tags;
+  private float rating;
+  private int stock;
 
 }

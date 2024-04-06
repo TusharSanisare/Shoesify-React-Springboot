@@ -26,7 +26,7 @@ public class ProductService {
 
   public int saveProduct(Product product) {
     Product temp = productRepo.save(product);
-    return temp.getId();
+    return temp.getProductId();
   }
 
   public List<Product> getProductList() {
