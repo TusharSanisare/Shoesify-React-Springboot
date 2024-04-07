@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import ShoeCard from "./ShoeCard";
 
 const SideProductNavbar = () => {
   return (
@@ -26,18 +26,16 @@ const SideProductNavbar = () => {
           </ul>
         </div>
         <div className="w-3/4 bg-white p-4 flex flex-wrap justify-evenly">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
+          <ShoeCard />
         </div>
       </div>
     </>

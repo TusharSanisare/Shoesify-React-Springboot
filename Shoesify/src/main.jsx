@@ -2,14 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // import App from "./App.jsx";
+
 import HomeLayout from "./layouts/HomeLayout";
 import HeroSection from "./components/HeroSection";
 import ProductCategoryGallery from "./components/ProductCategoryGallery";
 import NewArrivedProductsGallery from "./components/NewArrivedProductsGallery";
-import HorizontalCardContainer from "./components/HorizontalCardContainer";
 import ProductContainer from "./components/ProductContainer";
 import Cart from "./components/Cart";
 import ProductDetail from "./components/ProductDetail";
+import SuperDealProductsContainer from "./components/SuperDealProductsContainer";
+
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
             <HeroSection />
             <ProductCategoryGallery />
             <NewArrivedProductsGallery />
-            <HorizontalCardContainer />
+            <SuperDealProductsContainer />
           </>
         ),
       },
@@ -41,8 +43,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <ProductDetail />
-            <HorizontalCardContainer />
-            {/* <ProductContainer /> */}
+            <SuperDealProductsContainer />
           </>
         ),
       },
