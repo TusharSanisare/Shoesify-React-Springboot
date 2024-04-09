@@ -40,18 +40,16 @@ public class ProductController {
     int status = productService.saveProductList(products);
     return status;
   }
-  // @PostMapping("/test")
-  // public List<Product> addProducts(@RequestBody List<Product> products) {
-  // return products;
-  // }
-  // @PostMapping("/products")
-  // public String fuck(@RequestBody List<Product> products) {
-  // return "fuck uuuuuuuuuuu......";
-  // }
 
   @GetMapping("/products")
   public List<Product> getProducts() {
     List<Product> productList = productService.getProductList();
+    return productList;
+  }
+
+  @GetMapping("/products/category") // localhost:8080/product/category?id=7
+  public List<Product> getProductByCategoryId(@RequestParam int id) {
+    List<Product> productList = productService.getProductByCategoryId(id);
     return productList;
   }
 

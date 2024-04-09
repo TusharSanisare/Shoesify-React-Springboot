@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-@Entity
+@Entity(name = "Product")
 @Data
 public class Product {
 
@@ -17,7 +17,7 @@ public class Product {
   private int productId;
 
   private String category;
-  private int category_id;
+  private int categoryId;
   private String name;
   private String description;
   private int price;

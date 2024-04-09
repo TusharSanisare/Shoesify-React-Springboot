@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LoadingState from "./LoadingState";
+import { Link } from "react-router-dom";
 
 const ProductCategoryGallery = () => {
   const [categoryList, setCategoryList] = useState([]);
@@ -29,8 +29,10 @@ const ProductCategoryGallery = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-              <a
-                href=""
+              <Link
+                to={
+                  loading ? "" : "view-products/" + categoryList[0].category_id
+                }
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
                 <img
@@ -42,11 +44,15 @@ const ProductCategoryGallery = () => {
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                   {loading ? "Loading..." : categoryList[0].category_name}
                 </h3>
-              </a>
+              </Link>
             </div>
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-              <a
-                href=""
+              <Link
+                to={
+                  loading
+                    ? ""
+                    : "view-products?id=" + categoryList[1].category_id
+                }
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 mb-4"
               >
                 <img
@@ -58,10 +64,14 @@ const ProductCategoryGallery = () => {
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                   {loading ? "Loading..." : categoryList[1].category_name}
                 </h3>
-              </a>
+              </Link>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-                <a
-                  href=""
+                <Link
+                  to={
+                    loading
+                      ? ""
+                      : "view-products?id=" + categoryList[2].category_id
+                  }
                   className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40"
                 >
                   <img
@@ -73,9 +83,13 @@ const ProductCategoryGallery = () => {
                   <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                     {loading ? "Loading..." : categoryList[2].category_name}
                   </h3>
-                </a>
-                <a
-                  href=""
+                </Link>
+                <Link
+                  to={
+                    loading
+                      ? ""
+                      : "view-products?id=" + categoryList[3].category_id
+                  }
                   className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40"
                 >
                   <img
@@ -87,12 +101,16 @@ const ProductCategoryGallery = () => {
                   <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                     {loading ? "Loading..." : categoryList[3].category_name}
                   </h3>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-              <a
-                href=""
+              <Link
+                to={
+                  loading
+                    ? ""
+                    : "view-products?id=" + categoryList[4].category_id
+                }
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
                 <img
@@ -104,7 +122,7 @@ const ProductCategoryGallery = () => {
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                   {loading ? "Loading..." : categoryList[4].category_name}
                 </h3>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

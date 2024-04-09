@@ -42,4 +42,15 @@ public class ProductService {
       return null;
     }
   }
+
+  public List<Product> getProductByCategoryId(int category_id) {
+    List<Product> products = productRepo.getProductsByCategoryId(category_id);
+
+    if (products != null) {
+      return products;
+    } else {
+      System.out.println("ProductService : Error -> List is NULL");
+      return null;
+    }
+  }
 }
