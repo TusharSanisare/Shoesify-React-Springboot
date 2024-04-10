@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ShoeCard from "./ShoeCard";
 
@@ -8,8 +8,9 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper/modules";
 
-export default function HorizontalScrollContainer() {
+export default function HorizontalScrollContainer({ productList }) {
   const [swiperRef, setSwiperRef] = useState(null);
+  console.log(productList[0]);
 
   return (
     <>
@@ -21,33 +22,18 @@ export default function HorizontalScrollContainer() {
         modules={[Pagination, Navigation]}
         className="mySwiper mb-[50px]"
       >
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoeCard />
-        </SwiperSlide>
+        {productList.map((product) => (
+          <SwiperSlide key={product.productId}>
+            <ShoeCard
+              productId={product.productId}
+              offer={product.offer}
+              // image={product.imageUrls[0]}
+              name={product.name}
+              rating={product.rating}
+              price={product.price}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

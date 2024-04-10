@@ -10,7 +10,6 @@ const ProductCategoryGallery = () => {
       .then((response) => response.json())
       .then((data) => {
         setCategoryList(data);
-        console.log(categoryList.length);
         if (categoryList) {
           setLoading(false); // Setting loading to false when data is fetched
         }
