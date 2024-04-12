@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <header className="bg-gray-100 mb-2">
-        <div className="container mx-auto px-4 py-5 flex items-center">
+      <header className="bg-gray-100 mb-2 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-3 flex items-center">
           {/* logo */}
           <div className="mr-auto md:w-48 flex-shrink-0">
-            <h1 className="text-3xl font-bold">Shoesify</h1>
+            <Link to={"/"}>
+              <h1 className="text-3xl font-bold">Shoesify</h1>
+            </Link>
           </div>
           {/* search */}
-          <div className="w-full max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-white rounded-md hidden xl:flex items-center">
+          <div className="w-full border border-gray-300 max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-white rounded-md hidden xl:flex items-center">
             <select
               className="bg-transparent uppercase font-bold text-sm p-4 mr-4"
               name=""

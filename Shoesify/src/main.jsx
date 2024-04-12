@@ -43,12 +43,11 @@ const router = createBrowserRouter([
         element: (
           <>
             <ProductDetail />
-            <SuperDealProductsContainer />
           </>
         ),
       },
       {
-        path: "view-products/:id",
+        path: "view-products/category/:id",
         element: (
           <>
             <ProductContainer />
@@ -61,7 +60,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );

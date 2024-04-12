@@ -10,7 +10,6 @@ import { Pagination, Navigation } from "swiper/modules";
 
 export default function HorizontalScrollContainer({ productList }) {
   const [swiperRef, setSwiperRef] = useState(null);
-  console.log(productList[0]);
 
   return (
     <>
@@ -22,12 +21,13 @@ export default function HorizontalScrollContainer({ productList }) {
         modules={[Pagination, Navigation]}
         className="mySwiper mb-[50px]"
       >
+        {productList.length > 0 ? "" : "Loading..."}
         {productList.map((product) => (
           <SwiperSlide key={product.productId}>
             <ShoeCard
               productId={product.productId}
               offer={product.offer}
-              // image={product.imageUrls[0]}
+              image={product.imageUrls[0]}
               name={product.name}
               rating={product.rating}
               price={product.price}

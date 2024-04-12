@@ -10,13 +10,9 @@ const SuperDealProductsContainer = () => {
       .then((data) => setProductList(data));
   }, []);
 
-  // if (productList.length > 0) {
-  //   console.log(productList);
-  // }
-
   return (
     <>
-      <section className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6">
+      <section className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6 mt-[50px]">
         <div className="flex flex-wrap items-center justify-between mb-8">
           <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl">
             Super Hit Deals

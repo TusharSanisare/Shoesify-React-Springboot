@@ -1,25 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ShoeCard = ({ productId, offer, image, name, rating, price }) => {
   // offer = 50;
-  // image =
-  //   "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYscie_ywcbvGR3GBtZrPnu-aIintXPXBvsUtgnZOK9JSkg93x9eNRUBDUBnweq3_jbX6ddRQT4xuFIrThcZy5FJq3GDFExyZlbQrtVTNlTu_Dv4FM4LA8&usqp=CAE";
+  image =
+    "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYscie_ywcbvGR3GBtZrPnu-aIintXPXBvsUtgnZOK9JSkg93x9eNRUBDUBnweq3_jbX6ddRQT4xuFIrThcZy5FJq3GDFExyZlbQrtVTNlTu_Dv4FM4LA8&usqp=CAE";
   // name = "Bold-Series B1 Sport shoe ";
   // rating = 4.5;
   // price = 4300;
 
   return (
     <>
-      <div className="relative mb-9  w-full max-w-xs overflow-hidden rounded-sm shadow-md border border-gray-300 bg-white">
-        <a href="#" className=" bg-gray-300 ">
+      <div
+        className={`${
+          image ? "" : "animate-pulse bg-gray-200"
+        }relative mb-9  w-full max-w-xs overflow-hidden rounded-sm shadow-md border border-gray-300 `}
+      >
+        <Link to={`product/${productId}`} className=" bg-gray-300 ">
           <img
             className="h-60 w-full rounded-t-sm object-cover border"
             src={image}
-            alt="product image"
+            alt={image}
           />
-        </a>
+        </Link>
+        {/* offers  */}
         <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">
           {offer + "%"} OFF
+        </span>
+        {/* Heart / Save to favorites */}
+        <span className="absolute top-0 right-0  m-1 border-5xl bg-white fles items-center justify-center rounded-3xl ">
+          {<i className="ri-heart-line text-xl p-1 text-red-600"></i>}
+          {/* {<i className="ri-heart-fill text-xl text-red-600"></i>} */}
         </span>
         <div className="mt-4 px-5 pb-5">
           <a href="#">
@@ -35,10 +46,10 @@ const ShoeCard = ({ productId, offer, image, name, rating, price }) => {
           </div>
           <div className="flex items-center justify-between">
             <p>
-              <span className="text-2xl font-bold text-slate-900">
-                {Math.floor((price / 100) * (100 - offer))}
+              <span className="text-2xl font-bold text-slate-900 mr-2">
+                {"₹" + Math.floor((price / 100) * (100 - offer))}
               </span>
-              <span className="text-sm text-slate-900 line-through">
+              <span className="text-md text-slate-900 line-through">
                 {"₹" + price}
               </span>
             </p>

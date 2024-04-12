@@ -47,7 +47,7 @@ public class ProductController {
     return productList;
   }
 
-  @GetMapping("/products/category") // localhost:8080/product/category?id=7
+  @GetMapping("/products/category") // localhost:8080/products/category?id=7
   public List<Product> getProductByCategoryId(@RequestParam int id) {
     List<Product> productList = productService.getProductByCategoryId(id);
     return productList;

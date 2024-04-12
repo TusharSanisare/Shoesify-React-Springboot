@@ -30,7 +30,9 @@ const ProductCategoryGallery = () => {
             <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
               <Link
                 to={
-                  loading ? "" : "view-products/" + categoryList[0].category_id
+                  loading
+                    ? ""
+                    : "view-products/category/" + categoryList[0].category_id
                 }
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
