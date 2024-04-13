@@ -21,7 +21,10 @@ const ProductCategoryGallery = () => {
 
   return (
     <>
-      <section className={`bg-white my-8 ${loading ? "animate-pulse" : ""}`}>
+      <section
+        id="productGalleryContainer"
+        className={` bg-white my-8 ${loading ? "animate-pulse" : ""}`}
+      >
         <div className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6">
           <h2 className="mb-8 mr-10 text-4xl font-bold leading-none md:text-5xl">
             Top Selling Categorie's
