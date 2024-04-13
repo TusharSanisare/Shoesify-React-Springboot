@@ -12,7 +12,10 @@ const SuperDealProductsContainer = () => {
 
   return (
     <>
-      <section className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6 mt-[50px]">
+      <section
+        id="superDealsProducts"
+        className="py-4 px-2 mx-auto max-w-6xl sm:py-4 lg:px-6 mt-[50px]"
+      >
         <div className="flex flex-wrap items-center justify-between mb-8">
           <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl">
             Super Hit Deals

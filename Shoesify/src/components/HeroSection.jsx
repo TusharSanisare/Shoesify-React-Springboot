@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link as ScrollLink } from "react-scroll";
 
 export const HeroSection = () => {
   return (
@@ -32,18 +31,18 @@ export const HeroSection = () => {
             offering comfort and sophistication for every step.
           </p>
           <div className="flex items-center">
-            <a
-              href="/"
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white bg-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            <ScrollLink
+              to="productGalleryContainer"
+              className="cursor-pointer inline-flex items-center justify-center h-12 px-6 mr-6 font-medium text-white bg-black rounded shadow-md focus:outline-none"
             >
               Explore more
-            </a>
-            <a
-              href="/"
-              className="bg-white inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black border-solid border-2 border-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            </ScrollLink>
+            <ScrollLink
+              to="superDealsProducts"
+              className="cursor-pointer bg-white inline-flex items-center justify-center h-12 px-6 mr-6 font-medium  text-black border-2 border-black rounded shadow-md focus:outline-none"
             >
               Shop now
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </div>
