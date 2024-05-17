@@ -40,7 +40,6 @@ const ProductCategoryGallery = () => {
                 className="group relative flex flex-col overflow-hidden rounded-sm px-4 pb-4 pt-40 flex-grow"
               >
                 <img
-                  src={loading ? "" : categoryList[0].category_image}
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />

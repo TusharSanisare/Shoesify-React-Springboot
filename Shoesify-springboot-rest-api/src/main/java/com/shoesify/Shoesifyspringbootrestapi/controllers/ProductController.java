@@ -53,4 +53,10 @@ public class ProductController {
     return productList;
   }
 
+  @GetMapping("/products/latest")
+  public List<Product> getLatestProductList() {
+    List<Product> productList = productService.getLatestProductList();
+    return productList;
+  }
+
 }

@@ -1,5 +1,6 @@
 package com.shoesify.Shoesifyspringbootrestapi.services;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
@@ -32,6 +33,22 @@ public class ProductService {
   public List<Product> getProductList() {
     List<Product> productList = productRepo.findAll();
     return productList;
+  }
+
+  public List<Product> getLatestProductList() {
+    List<Product> productList = productRepo.findAll();
+    List<Product> latestProducts = new ArrayList<>();
+
+    // Iterate through the products and add only the first 4
+    int count = 0;
+    for (Product product : productList) {
+      latestProducts.add(product);
+      count++;
+      if (count >= 4) {
+        break;
+      }
+    }
+    return latestProducts;
   }
 
   public Product getProductbyId(int id) {

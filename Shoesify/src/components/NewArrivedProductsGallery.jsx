@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const NewArrivedProductsGallery = () => {
+  const [newProducts, setNewProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/products/latest")
+      .then((data) => data.json())
+      .then((data) => {
+        setNewProducts(data);
+        if (loading) {
+          setLoading(false);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching New Arrived Product list:", error);
+      });
+  }, []);
   return (
     <>
       <div className="bg-white mx-auto max-w-6xl py-6 sm:py-8 lg:py-12">
